@@ -1,0 +1,386 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pridi", sans-serif;
+}
+
+body {
+    min-height: 300vh;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    background-image: url(/assets/konkret-logo.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    padding: 25px 0px 25px 25px;
+    margin-left: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu a {
+    color: #8e05c2;
+    font-size: 23px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.signup {
+    display: flex;
+    margin-right: 3em;
+    white-space: nowrap;
+    padding-left: 8rem;
+}
+
+.signup a {
+    color: #8e05c2;
+    font-size: 23px;
+    font-weight: 50;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.first-section {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 8%;
+    align-items: center;
+}
+
+.first-section h1 {
+    color: #8e05c2;
+    text-align: center;
+    margin-top: 2rem;
+
+    font-size: 2.5em;
+}
+
+.band-photo {
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+}
+
+@keyframes movingtxt {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.first-divider text {
+    color: black;
+    font-weight: 600;
+    font-size: 1.3em;
+    animation: movingtxt 20s linear infinite;
+}
+
+.first-divider rect {
+    fill: #8e05c2;
+}
+
+.lineup {
+    margin-top: 5rem;
+}
+
+.second-section rect {
+    fill: #8e05c2;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 3rem;
+    color: #8e05c2;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.time-box {
+    background-color: #8e05c2;
+    color: white;
+    border-radius: 60px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+}
+
+.time-box span {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.time-box .label {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.separator {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 0 #ffffff, -1px 1px 0 #ffffff, 1px -1px 0 #ffffff,
+        -1px -1px 0 #ffffff, 0px 0px 2px #ffffff;
+}
+
+.countdown h2 {
+    padding-top: 3rem;
+    font-size: 35px;
+    letter-spacing: 0.2rem;
+}
+
+.venue {
+    background-image: url("/assets/venue-bg.png");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    text-align: center;
+}
+
+.venue h1 {
+    color: #8e05c2;
+    padding-top: 2em;
+    margin-top: 3rem;
+    font-size: 2.5em;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+}
+.address {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.venue p {
+    color: #8e05c2;
+    font-size: 32px;
+    margin: 0.5em 0;
+}
+
+.tickets {
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.ticket-container .ticket .ticket-title {
+    background-color: white;
+    color: #350847;
+}
+.ticket-container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6em;
+    gap: 50px;
+}
+
+.ticket-container .ticket {
+    width: 200px;
+    height: auto;
+    padding: 10px 1px;
+    text-align: center;
+    background-color: #8e05c2;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.ticket-container .ticket .ticket-content button {
+    width: 150px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+}
+
+.ticket-container .ticket .ticket-content button a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #8e05c2;
+}
+
+.ticket:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 15px rgba(145, 92, 182, 0.4);
+}
+
+footer {
+    background-color: #8e05c2;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-section h2 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.social-btn {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-btn:hover {
+    color: #000000;
+}
+
+.footer-nav {
+    padding: 0 5em;
+    border-left: #ffffff 2px solid;
+    border-right: 2px solid #ffffff;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #000000;
+}
+
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 0.5em;
+}

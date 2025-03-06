@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pridi", sans-serif;
+}
+
+body {
+    min-height: 160vh;
+    background-color: black;
+    background-image: url(/assets/bg_about.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    background-image: url(/assets/konkret-logo.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    padding: 25px 0px 25px 25px;
+    margin-left: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu a {
+    color: #8e05c2;
+    font-size: 23px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+.signup {
+    display: flex;
+    margin-right: 3em;
+    white-space: nowrap;
+    padding-left: 8rem;
+}
+
+.signup a {
+    color: #8e05c2;
+    font-size: 23px;
+    font-weight: 50;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.about-content {
+    color: white;
+    padding: 150px 150px 70px 150px;
+    z-index: 5;
+    position: relative;
+}
+
+.about-content h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.vision-mission-container {
+    background-color: rgba(66, 8, 82, 0.635);
+    padding: 35px;
+    margin: 30px 15%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision,
+.mission {
+    text-align: center;
+    flex: 0 0 50%;
+    color: white;
+}
+
+.vision h2,
+.mission h2 {
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+
+.vision p,
+.mission p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.why-us {
+    color: white;
+    padding: 70px;
+    z-index: 5;
+    position: relative;
+}
+
+.why-us h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.terms-conditions {
+    color: white;
+    padding: 70px;
+    z-index: 5;
+    position: relative;
+    background-color: rgba(66, 8, 82, 0.635);
+    border-radius: 25px;
+    line-height: 1.5;
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.terms-conditions h1,
+.terms-conditions h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.terms-conditions h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.terms-conditions h2 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.terms-conditions p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.terms-conditions ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.terms-conditions li {
+    margin-bottom: 10px;
+}
+
+.privacy-policy {
+    color: white;
+    padding: 70px 250px;
+    z-index: 5;
+    position: relative;
+}
+
+.privacy-policy h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.privacy-policy h2 {
+    margin-top: 25px;
+    text-align: left;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.privacy-policy p,
+.privacy-policy ul,
+.privacy-policy ol {
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.privacy-policy ul,
+.privacy-policy ol {
+    margin-left: 20px;
+}
+
+.privacy-policy a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.aboutus-container {
+    margin-top: 30px;
+    background-color: rgba(66, 8, 82, 0.635);
+    padding: 30px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+.about-us {
+    text-align: center;
+    flex: 0 0 50%;
+    color: white;
+}
+footer {
+    background-color: #8e05c2;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.footer-section h2 {
+    margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.social-btn {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-btn:hover {
+    color: #000000;
+}
+
+.footer-nav {
+    padding: 0 5em;
+    border-left: #ffffff 2px solid;
+    border-right: 2px solid #ffffff;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2em;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #000000;
+}
+
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 1.5em;
+}
